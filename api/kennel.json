@@ -1,26 +1,85 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle", "employeeId":1},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd", "employeeId":2 },
-        { "id": 3, "name": "Esme", "breed": "Pitbull", "employeeId":3 }
-    ],
-
-    "locations": [
-        { "id": 1, "name": "Nashville North"},
-        { "id": 2, "name":  "Nashville South" },
-        { "id": 3, "name":  "Nashville East" },
-        { "id": 4, "name":  "Nashville West" }
-    ],
-
-    "employees": [
-        { "id": 1, "name": "Chris Diaz"},
-        { "id": 2, "name": "Andy Mc Nally"},
-        { "id": 3, "name": "Gail Peck "}
-    ],
-    "owners": [
-        { "id": 1, "name": "Sam Swarek", "phone": "615-812-3007"},
-        { "id": 2, "name": "Luke Callahan", "phone": "615-482-4760"},
-        { "id": 3, "name": "Oliver Shaw", "phone": "615-367-4563"},
-        { "id": 4, "name": "Zoe Shaw", "phone": "615-367-3217"}
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "employeeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Sheperd",
+      "employeeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Hachie",
+      "breed": "Border Collie",
+      "employeeId": 1
+    },
+    {
+      "id": 4,
+      "name": "Darrel",
+      "breed": "Doxin",
+      "employeeId": 2
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address":"1235 Puppy Drive Nashville, TN 37167"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address":"1235 Dog Road Nashville, TN 37167"
+    },
+    {
+      "id": 3,
+      "name": "Nashville East",
+      "address":"1564 Cat Lane Nashville, TN 37167"
+    },
+    {
+      "id": 4,
+      "name": "Nashville West",
+      "address":"235 Kitten Drive Nashville, TN 37167"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Chris Diaz"
+    },
+    {
+      "id": 2,
+      "name": "Andy Mc Nally"
+    },
+    {
+      "id": 3,
+      "name": "Gail Peck"
+    },
+    {
+      "id": 4,
+      "name": "Dov Epsteame"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Sam Swarek",
+      "phone": "615-812-3007"
+    },
+    {
+      "id": 2,
+      "name": "Luke Callahan",
+      "phone": "615-482-4760"
+    },
+    {
+      "id": 3,
+      "name": "Oliver Shaw",
+      "phone": "615-367-4563"
+    }
+  ]
 }

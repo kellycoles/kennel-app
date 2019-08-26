@@ -8,7 +8,7 @@ class OwnerCard extends Component {
 
           <h3>Owner: <span className="card-ownerName">{this.props.owner.name}</span></h3>
           <p>Phone: {this.props.owner.phone}</p>
-
+          <button type="button" onClick={() => this.props.deleteOwner(this.props.owner.id)}>Remove Record</button>
         </div>
       </div>
     );

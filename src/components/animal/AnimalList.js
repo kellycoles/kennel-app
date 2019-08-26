@@ -19,14 +19,30 @@ componentDidMount(){
         })
     })
 }
-
-render(){
+// add delete method here
+deleteAnimal = id => {
+    AnimalManager.delete(id)
+    .then(() => {
+      AnimalManager.getAll()
+      .then((newAnimals) => {
+        this.setState({
+            animals: newAnimals
+        })
+      })
+    })
+  }
+  render(){
     console.log("AnimalList: Render");
 
     return(
       <div className="container-cards">
-        {this.state.animals.map(animaltaco =>
-          <AnimalCard key={animaltaco.id} animalObj={animaltaco} />
+        {this.state.animals.map(animal =>
+          <AnimalCard
+            key={animal.id}
+            animal={animal}
+            deleteAnimal={this.deleteAnimal}
+            // above are properties being passed to AnimalCard
+          />
         )}
       </div>
     )
