@@ -6,11 +6,9 @@ class OwnerCard extends Component {
       <div className="card">
         <div className="card-content">
 
-          <h3>Owner: <span className="card-ownerName">Jane Doe</span></h3>
-          <p>Pet: Doodles</p>
-          <address>Address: 402 Valley Drive<br />
-                   Murfreesboro, TN. 37129
-          </address>
+          <h3>Owner: <span className="card-ownerName">{this.props.owner.name}</span></h3>
+          <p>Phone: {this.props.owner.phone}</p>
+
         </div>
       </div>
     );

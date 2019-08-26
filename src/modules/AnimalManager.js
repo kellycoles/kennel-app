@@ -7,4 +7,6 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/animals`).then(result => result.json())
   }
+
+
 }
