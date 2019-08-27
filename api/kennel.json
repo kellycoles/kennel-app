@@ -17,34 +17,32 @@
       "name": "Hachie",
       "breed": "Border Collie",
       "employeeId": 1
-    },
-    {
-      "id": 4,
-      "name": "Darrel",
-      "breed": "Doxin",
-      "employeeId": 2
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North",
-      "address":"1235 Puppy Drive Nashville, TN 37167"
+      "address": "1235 Puppy Drive Nashville, TN 37167",
+      "imgLocation": "../images/kennel.jpg"
     },
     {
       "id": 2,
       "name": "Nashville South",
-      "address":"1235 Dog Road Nashville, TN 37167"
+      "address": "1235 Dog Road Nashville, TN 37167",
+      "imgLocation": "../images/kennel2.jpg"
     },
     {
       "id": 3,
       "name": "Nashville East",
-      "address":"1564 Cat Lane Nashville, TN 37167"
+      "address": "1564 Cat Lane Nashville, TN 37167",
+      "imgLocation": "../images/kennel3.jpg"
     },
     {
       "id": 4,
       "name": "Nashville West",
-      "address":"235 Kitten Drive Nashville, TN 37167"
+      "address": "235 Kitten Drive Nashville, TN 37167",
+      "imgLocation": "../images/kennel4.jpg"
     }
   ],
   "employees": [
@@ -59,10 +57,6 @@
     {
       "id": 3,
       "name": "Gail Peck"
-    },
-    {
-      "id": 4,
-      "name": "Dov Epsteame"
     }
   ],
   "owners": [

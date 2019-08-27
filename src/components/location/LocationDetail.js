@@ -28,7 +28,7 @@ class LocationDetail extends Component {
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
         <address>{this.state.address}</address>
           <picture>
-            <img src={require('./kennel.jpg')} alt="A Kennel" />
+            {/* <img src={require(${this.props.locations.imgLocation})} alt="A Kennel" /> */}
           </picture>
 
 

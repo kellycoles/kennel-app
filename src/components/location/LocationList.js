@@ -6,7 +6,7 @@ import LocationManager from '../../modules/LocationManager'
 class LocationList extends Component {
     //define what this component needs to render
     state = {
-        locations: [],
+        locations: []
     }
 
     componentDidMount() {
