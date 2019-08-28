@@ -9,8 +9,7 @@
     {
       "id": 2,
       "name": "Decker",
-      "breed": "German Sheperd",
-      "employeeId": 2
+      "breed": "German Sheperd Mix"
     },
     {
       "id": 3,
@@ -29,24 +28,23 @@
       "id": 1,
       "name": "Nashville North",
       "address": "1235 Puppy Drive Nashville, TN 37167",
-      "imgLocation": "../images/kennel.jpg_1"
+      "imgLocation": "./images/kennel2.jpg"
     },
     {
       "id": 2,
       "name": "Nashville South",
-      "address": "1235 Dog Road Nashville, TN 37167",
-      "imgLocation": "../images/kennel_2.jpg"
+      "address": "1235 Dog Lane Nashville, TN 37129"
     },
     {
       "id": 3,
       "name": "Nashville East",
       "address": "1564 Cat Lane Nashville, TN 37167",
-      "imgLocation": "../images/kennel_3.jpg"
+      "imgLocation": "./images/kennel3.jpg"
     },
     {
+      "id": 4,
       "name": "Nashville West",
-      "address": "321 Cat Drive",
-      "id": 4
+      "address": "321 Cat Lane"
     }
   ],
   "employees": [
@@ -87,6 +85,11 @@
       "name": "Frank Best",
       "phone": "615-812-2660",
       "id": 4
+    },
+    {
+      "name": "Nick Collins",
+      "phone": "6158122660",
+      "id": 5
     }
   ]
 }

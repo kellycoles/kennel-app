@@ -16,7 +16,7 @@ class LocationList extends Component {
             .then((locations) => {
                 this.setState({
                     locations: locations
-                })
+                }, ()=> console.log(this.state))
             })
     }
 
@@ -48,8 +48,9 @@ class LocationList extends Component {
                     {this.state.locations.map(location =>
                         <LocationCard
                             key={location.id}
-                            location={location}
+                            locationObj={location}
                             deleteLocation={this.deleteLocation}
+                            {...this.props}
                         />)}
                 </div>
             </>

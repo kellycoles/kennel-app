@@ -8,6 +8,7 @@ class LocationDetail extends Component {
       name: "",
       address:"",
       loadingStatus: true,
+      imgLocation:"",
 
   }
 
@@ -20,6 +21,7 @@ class LocationDetail extends Component {
         name: location.name,
         address: location.address,
         loadingStatus: false,
+        imgLocation: location.imgLocation
       });
     });
   }
@@ -37,7 +39,7 @@ class LocationDetail extends Component {
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
         <address>{this.state.address}</address>
           {/* <picture>
-            <img src={require(${this.props.locations.imgLocation})} alt="A Kennel" />
+            <img src={require(`${this.state.imgLocation}`)} alt="A Kennel" />
           </picture> */}
           <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Remove Location</button>
 

@@ -26,21 +26,24 @@ class AnimalDetail extends Component {
 
     handleDelete = () => {
         //invoke the delete function in AnimalManger and re-direct to the animal list.
-        this.setState({loadingStatus: true})
+        this.setState({ loadingStatus: true })
         AnimalManager.delete(this.props.animalId)
-        .then(() => this.props.history.push("/animals"))
+            .then(() => this.props.history.push("/animals"))
     }
 
     render() {
         return (
             <div className="card">
                 <div className="card-content">
+
+                    <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
+                    <p>Breed: {this.state.breed}</p>
                     <picture>
-                        <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
-                        <p>Breed: {this.state.breed}</p>
-                        <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
-                        <img src={require('../../images/dog.svg')} alt="My Dog" />
+                        <img src={require('./images/dog.svg')} alt="My Dog" className="center" />
                     </picture>
+                    <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
+
+
                 </div>
             </div>
         );
