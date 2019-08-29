@@ -38,11 +38,11 @@ class LocationDetail extends Component {
         <div className="card-content">
         <h3>Name: <span style={{ color: 'darkslategrey' }}>{this.state.name}</span></h3>
         <address>{this.state.address}</address>
-          {/* <picture>
-            <img src={require(`${this.state.imgLocation}`)} alt="A Kennel" />
-          </picture> */}
+          <picture>
+            <img src={(`${this.state.imgLocation}`)} alt="A Kennel" />
+          </picture>
           <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Remove Location</button>
-
+{/* what is this--> disabled={this.state.loadingStatus} from above^ */}
         </div>
       </div>
     );

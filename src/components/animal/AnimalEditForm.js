@@ -14,7 +14,7 @@ class AnimalEditForm extends Component {
       const stateToChange = {}
       stateToChange[evt.target.id] = evt.target.value
       this.setState(stateToChange)
-    }
+    };
 
     updateExistingAnimal = evt => {
       evt.preventDefault()
@@ -54,7 +54,7 @@ class AnimalEditForm extends Component {
                 id="animalName"
                 value={this.state.animalName}
               />
-              <label htmlFor="animalName">Animal name</label>
+              <label htmlFor="animalName">Animal Name</label>
 
               <input
                 type="text"

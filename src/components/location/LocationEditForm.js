@@ -22,7 +22,8 @@ class LocationEditForm extends Component {
       const editedLocation = {
         id: this.props.match.params.locationId,
         name: this.state.name,
-        address: this.state.address
+        address: this.state.address,
+        imgLocation: this.location.imgLocation
       };
 
       LocationManager.update(editedLocation)
@@ -35,6 +36,7 @@ class LocationEditForm extends Component {
           this.setState({
             name: location.name,
             address: location.address,
+            imgLocation: location.imgLocation,
             loadingStatus: false,
           });
       });
@@ -65,6 +67,7 @@ class LocationEditForm extends Component {
                 value={this.state.address}
               />
               <label htmlFor="address">Address</label>
+       
             </div>
             <div className="alignRight">
               <button

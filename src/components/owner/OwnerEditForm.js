@@ -1,83 +1,83 @@
-// import React, { Component } from "react"
-// import AnimalManager from "../../modules/AnimalManager"
+import React, { Component } from "react"
+import OwnerManager from "../../modules/OwnerManager"
 
 
-// class AnimalEditForm extends Component {
-//     //set the initial state
-//     state = {
-//       animalName: "",
-//       breed: "",
-//       loadingStatus: true,
-//     };
+class OwnerEditForm extends Component {
+    //set the initial state
+    state = {
+      name: "",
+      phone: "",
+      loadingStatus: true,
+    };
 
-//     handleFieldChange = evt => {
-//       const stateToChange = {}
-//       stateToChange[evt.target.id] = evt.target.value
-//       this.setState(stateToChange)
-//     }
+    handleFieldChange = evt => {
+      const stateToChange = {}
+      stateToChange[evt.target.id] = evt.target.value
+      this.setState(stateToChange)
+    }
 
-//     updateExistingAnimal = evt => {
-//       evt.preventDefault()
-//       this.setState({ loadingStatus: true });
-//       const editedAnimal = {
-//         id: this.props.match.params.animalId,
-//         name: this.state.animalName,
-//         breed: this.state.breed
-//       };
+    updateExistingOwner = evt => {
+      evt.preventDefault()
+      this.setState({ loadingStatus: true });
+      const editedOwner = {
+        id: this.props.match.params.ownerId,
+        name: this.state.name,
+        phone: this.state.phone
+      };
 
-//       AnimalManager.update(editedAnimal)
-//       .then(() => this.props.history.push("/animals"))
-//     }
+      OwnerManager.update(editedOwner)
+      .then(() => this.props.history.push("/owners"))
+    }
 
-//     componentDidMount() {
-//       AnimalManager.get(this.props.match.params.animalId)
-//       .then(animal => {
-//           this.setState({
-//             animalName: animal.name,
-//             breed: animal.breed,
-//             loadingStatus: false,
-//           });
-//       });
-//     }
+    componentDidMount() {
+      OwnerManager.get(this.props.match.params.ownerlId)
+      .then(owner => {
+          this.setState({
+            name: owner.name,
+            phone: owner.phone,
+            loadingStatus: false,
+          });
+      });
+    }
 
-//     render() {
-//       return (
-//         <>
-//         <form>
-//           <fieldset>
-//             <div className="formgrid">
-//               <input
-//                 type="text"
-//                 required
-//                 className="form-control"
-//                 onChange={this.handleFieldChange}
-//                 id="animalName"
-//                 value={this.state.animalName}
-//               />
-//               <label htmlFor="animalName">Animal name</label>
+    render() {
+      return (
+        <>
+        <form>
+          <fieldset>
+            <div className="formgrid">
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="name"
+                value={this.state.name}
+              />
+              <label htmlFor="name">Owner Name</label>
 
-//               <input
-//                 type="text"
-//                 required
-//                 className="form-control"
-//                 onChange={this.handleFieldChange}
-//                 id="breed"
-//                 value={this.state.breed}
-//               />
-//               <label htmlFor="breed">Breed</label>
-//             </div>
-//             <div className="alignRight">
-//               <button
-//                 type="button" disabled={this.state.loadingStatus}
-//                 onClick={this.updateExistingAnimal}
-//                 className="btn btn-primary"
-//               >Submit</button>
-//             </div>
-//           </fieldset>
-//         </form>
-//         </>
-//       );
-//     }
-// }
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="phone"
+                value={this.state.phone}
+              />
+              <label htmlFor="phone">Phone Number</label>
+            </div>
+            <div className="alignRight">
+              <button
+                type="button" disabled={this.state.loadingStatus}
+                onClick={this.updateExistingOwner}
+                className="btn btn-primary"
+              >Submit</button>
+            </div>
+          </fieldset>
+        </form>
+        </>
+      );
+    }
+}
 
-// export default AnimalEditForm
+export default OwnerEditForm

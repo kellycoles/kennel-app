@@ -50,6 +50,7 @@ class OwnerList extends Component {
                             key={owner.id}
                             owner={owner}
                             deleteOwner={this.deleteOwner}
+                            {...this.props}
                         />
                     )}
                 </div>

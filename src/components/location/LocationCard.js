@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import './Location.css'
 
 class LocationCard extends Component {
   render() {
@@ -9,7 +10,7 @@ class LocationCard extends Component {
           <h2>{this.props.locationObj.name}</h2>
           <p>{this.props.locationObj.address}</p>
           <picture>
-            <img src={(`${this.props.locationObj.imgLocation}`)} alt="A Kennel" />
+            <img src={require(`${this.props.locationObj.imgLocation}`)} alt="A Kennel" className="size" />
           </picture>
           <Link to={`/locations/${this.props.locationObj.id}`}><button>Details</button></Link>
           <button type="button"

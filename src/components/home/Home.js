@@ -10,7 +10,7 @@ class Home extends Component {
         <br />500 Puppy Way
       </address>
        <picture>
-       <img src={require('./home.jpg')} alt=" A Dog" className = "center"/>
+       <img src={require('./home3.jpg')} alt=" A Dog" className = "center"/>
      </picture>
      </>
     )

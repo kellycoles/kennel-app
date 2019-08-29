@@ -33,7 +33,7 @@ class EmployeeEditForm extends Component {
             .then(employee => {
                 this.setState({
                     name: employee.name,
-
+                    loadingStatus: false,
                 });
             });
     }

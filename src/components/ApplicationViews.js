@@ -13,7 +13,7 @@ import EmployeeForm from './employee/EmployeeForm'
 import LocationForm from './location/LocationForm'
 import Login from './auth/Login'
 import EmployeeEditForm from './employee/EmployeeEditForm'
-// import OwnerEditForm from './owner/OwnerEditForm'
+import OwnerEditForm from './owner/OwnerEditForm'
 import LocationEditForm from './location/LocationEditForm'
 import AnimalEditForm from './animal/AnimalEditForm'
 
@@ -104,7 +104,11 @@ class ApplicationViews extends Component {
           }
 
         }} />
-
+        <Route
+          path="/owners/:ownerId(\d+)/edit" render={props => {
+            return <OwnerEditForm {...props} />
+          }}
+        />
         <Route path="/owners/new" render={(props) => {
           return <OwnerForm {...props} />
         }} />

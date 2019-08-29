@@ -14,13 +14,12 @@
     {
       "id": 3,
       "name": "Hachie",
-      "breed": "Border Collie",
-      "employeeId": 1
+      "breed": "Border Collie "
     },
     {
+      "id": 4,
       "name": "Duke",
-      "breed": "cat",
-      "id": 4
+      "breed": "cat 2"
     }
   ],
   "locations": [
@@ -28,23 +27,25 @@
       "id": 1,
       "name": "Nashville North",
       "address": "1235 Puppy Drive Nashville, TN 37167",
-      "imgLocation": "./images/kennel2.jpg"
+      "imgLocation": "./images/kennel1.jpg"
     },
     {
       "id": 2,
       "name": "Nashville South",
-      "address": "1235 Dog Lane Nashville, TN 37129"
+      "address": "1235 Dog Lane Nashville, TN 37129",
+      "imgLocation": "./images/kennel2.jpg"
     },
     {
       "id": 3,
       "name": "Nashville East",
-      "address": "1564 Cat Lane Nashville, TN 37167",
+      "address": "1564 Cat Lane Nashville, TN 37168",
       "imgLocation": "./images/kennel3.jpg"
     },
     {
       "id": 4,
       "name": "Nashville West",
-      "address": "321 Cat Lane"
+      "address": "321 Cat Lane Nashville TN 37126",
+      "imgLocation": "./images/kennel4.jpg"
     }
   ],
   "employees": [
@@ -54,14 +55,14 @@
     },
     {
       "id": 2,
-      "name": "Andy Mc Nally"
+      "name": "Andy Mc Nally "
     },
     {
       "id": 3,
-      "name": "Gail Peck"
+      "name": "Gail Peck "
     },
     {
-      "name": "Nick Collins",
+      "name": "Otto",
       "id": 4
     }
   ],
@@ -78,18 +79,13 @@
     },
     {
       "id": 3,
-      "name": "Oliver Shaw",
-      "phone": "615-367-4563"
-    },
-    {
       "name": "Frank Best",
-      "phone": "615-812-2660",
-      "id": 4
+      "phone": "615-812-2660"
     },
     {
+      "id": 5,
       "name": "Nick Collins",
-      "phone": "6158122660",
-      "id": 5
+      "phone": "615-812-2660"
     }
   ]
 }
